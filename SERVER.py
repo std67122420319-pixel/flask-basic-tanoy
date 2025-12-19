@@ -46,3 +46,7 @@ def mod(a,b):
 def power(base,exponent):
   return f'<h1>{base} <sup> {base} </sup> = {base**exponent}<h1>'
 
+@app.route('/calculator/div/<int:a>/<int:b>')
+def div(a,b):
+  return f'<h1>{a} // {b} = {a//b}<h1>'
+
